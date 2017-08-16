@@ -10,7 +10,6 @@ const funcs = require('../src/project-1');
 // hint 2. - you should test to see if the expected return output is of a specified type, as well as the correct outcome.
 
 describe('Project-1 Functions', () => {
-
   describe('`multiplyByTen`', () => {
     const multiplyByTen = funcs.multiplyByTen;
     it('should be a function', () => {
@@ -106,7 +105,7 @@ describe('Project-1 Functions', () => {
       const properResultNum = firstNum + secondNum;
       const properResultStr = firstStr + secondStr;
       assert.equal(resultNum, properResultNum);
-      assert.equal(resultStr, properResultStr)
+      assert.equal(resultStr, properResultStr);
     });
   });
 
@@ -196,7 +195,7 @@ describe('Project-1 Functions', () => {
     it('should properly square a num', () => {
       const num = 2;
       const result = square(num);
-      assert.equal(result, num*num);
+      assert.equal(result, 4);
     });
   });
 
@@ -209,7 +208,7 @@ describe('Project-1 Functions', () => {
     it('should properly cube', () => {
       const num = 2;
       const result = cube(num);
-      assert.equal(result, num*num*num);
+      assert.equal(result, 8);
     });
   });
 
@@ -223,7 +222,7 @@ describe('Project-1 Functions', () => {
       const num = 2;
       const power = 2;
       const result = raiseToPower(num, power);
-      assert.equal(result, num*power);
+      assert.equal(result, 4);
     });
   });
 
@@ -286,7 +285,7 @@ describe('Project-1 Functions', () => {
     });
 
     it('Should return hello with name', () => {
-      const str = 'me'
+      const str = 'me';
       const result = getGreeting(str);
       assert.equal(result, 'Hello me!');
     });
@@ -327,7 +326,7 @@ describe('Project-1 Functions', () => {
     it('should get area of circle', () => {
       const radius = 2;
       const result = getCircleArea(radius);
-      assert.equal(result, 4*Math.PI);
+      assert.equal(result, 4 * Math.PI);
     });
   });
 
